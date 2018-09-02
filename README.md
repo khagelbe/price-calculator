@@ -20,6 +20,7 @@ REST API for price calculation service
 **Tax type can have two values: 1 or 2.** All other values will throw an exception.
 This is because the tax class can only be **7%** or **19%** and a user should not be able to
 insert any other values. 
+
 | Tax type  | Tax percent | 
 | --------- | ------------| 
 | 1         | 7%          | 
