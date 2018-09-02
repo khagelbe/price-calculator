@@ -1,0 +1,9 @@
+app_calculate_net:
+  path: /product/calculate-net
+  defaults:  { _controller: AppBundle:Product:calculateNet, _format: json }
+  methods:   [POST]
+
+app_calculate_gross:
+  path: /product/calculate-gross
+  defaults:  { _controller: AppBundle:Product:calculateGross, _format: json }
+  methods:   [POST]

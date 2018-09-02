@@ -1,0 +1,12 @@
+parameters:
+    #parameter_name: value
+
+services:
+    price_calculator:
+        class: AppBundle\Service\PriceCalculator
+        arguments: []
+
+    kernel.event_listener.json_request_transformer:
+        class: Qandidate\Common\Symfony\HttpKernel\EventListener\JsonRequestTransformerListener
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest, priority: 100 }
